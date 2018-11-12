@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sina">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/inn"
+        />
+    <TextView
+        android:id="@+id/name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ibn Sina Hospital"
+        android:layout_below="@+id/img1"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="123dp"
+        android:layout_marginStart="50dp"
+        android:text="Call"
+        android:onClick="call"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btn1"
+        android:layout_marginEnd="56dp"
+        android:onClick="web"
+        android:text="Website"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button"
+        android:layout_marginBottom="35dp"
+        android:onClick="next"
+        android:text="Next Page"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btn1"
+        android:layout_alignTop="@+id/button2"
+        android:text="Previous"
+        android:textAllCaps="false"
+        android:onClick="previous"
+        />
+
+</RelativeLayout>

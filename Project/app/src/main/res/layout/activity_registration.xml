@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+    <EditText
+        android:layout_alignLeft="@+id/PassEt"
+        android:layout_alignRight="@+id/PassEt"
+        android:id="@+id/EmailEt"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="118dp"
+        android:gravity="center"
+        android:inputType="textEmailAddress"
+        android:hint="Enter your email:"
+        android:textSize="25sp" />
+
+    <EditText
+        android:inputType="textPassword"
+        android:textSize="25sp"
+        android:id="@+id/PassEt"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/EmailEt"
+        android:hint="Enter your password:"
+         />
+    <EditText
+        android:inputType="textPassword"
+        android:textSize="25sp"
+        android:id="@+id/ConPassEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/PassEt"
+        android:hint="Confirm password:"
+        android:layout_alignLeft="@+id/PassEt"
+        android:layout_alignRight="@+id/PassEt"
+        android:gravity="center"
+         />
+
+    <Button
+        android:id="@+id/SignUpBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="195dp"
+        android:onClick="signUp"
+        android:text="Sign up"
+        android:textAllCaps="false"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/AlreadyUserTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="140dp"
+        android:text="Already have a account"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/LoginTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="110dp"
+        android:text="Login..."
+        android:textColor="@color/colorPrimary" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="41dp"
+        android:text="Password must be at least 6 character long."
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp"/>
+</RelativeLayout>
